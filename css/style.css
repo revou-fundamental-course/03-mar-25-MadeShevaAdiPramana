@@ -37,79 +37,54 @@ body {
     padding: 10px;
 }
 
-.carousel {
-    padding: 2rem;
-    background: linear-gradient(to bottom, #868686, #3e3e3e);
-    background-color: #626262;
-}
-
-.slideshow-container {
-    left: auto;
-    right: auto;
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-
-.slider {
-    display: flex;
-    scroll-behavior: smooth;
-    overflow: hidden; 
-    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-    border-radius: 0.5rem;
-    position: relative;
-    white-space: nowrap;
-}
-
-.slider img {
-    flex: 1 0 100%;
-    scroll-snap-align: start;
-    object-fit: cover;
-    width: 100%;
-    aspect-ratio: 16 / 9; 
-}
-
-/* Gaya titik navigasi */
-.slider-nav {
-    display: flex;
-    column-gap: 1rem;
-    position: absolute;
-    bottom: 1.25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-.slider-nav a {
-    width: 0.5rem;
-    height: 0.5rem; 
-    border-radius: 50%;
-    background-color: #ffffff;
-    opacity: 0.75;
-    transition: opacity 250ms ease;
-    display: block;
-}
-
-.slider-nav a.active {
-    opacity: 1;
- 
-}
-.slider-nav a:hover {
-    opacity: 1;
-}
-
-/* Warna section dengan gradasi nyambung */
-.ourfacilitation {
-    background: linear-gradient(to bottom, #626262, #505050);
-    color: rgb(255, 255, 255);
+.banner-img {
+    border: solid;
+    height: 500px;
+    margin: 20px;
     text-align: center;
-    padding: 2rem;
+    align-content: center;
 }
 
-.massageus {
-    background: linear-gradient(to bottom, #404040, #262626);
-    color: white;
+.profile-content {
+    border: solid;
+    height: 500px;
+    margin: 20px;
     text-align: center;
-    padding: 2rem;
+    align-content: center;
+}
+.achievement-content {
+    border: solid;
+    height: 500px;
+    margin: 20px;
+    text-align: center;
+    align-content: center;
+}
+.massage-content {
+    border: solid;
+    height: 500px;
+    margin: 20px;
+    text-align: center;
+    align-content: center;
+}
+footer {
+    text-align: center;
+    align-content: center;
+    background-color: #000000;
+    color: #ffffff;
 }
 
+#home {
+    margin: 10px;
+}
+
+#profile {
+    margin: 10px;
+}
+
+#achievement {
+    margin: 10px;
+}
+
+#massage-me {
+    margin: 10px;
+}
