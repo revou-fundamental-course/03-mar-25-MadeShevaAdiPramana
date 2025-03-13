@@ -1,98 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--Meta Data-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <!--For Responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProjectRevoU</title>
-    <!--LinkCSS-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    
 </head>
 <body>
-    <!--Header-->
-    <header>
-    <div class="topnav">
-        <!--Logo-->
+
+    <!-- Header / Navigation Bar -->
+    <header class="header-wrapper">
+        <!-- Logo -->
         <img src="assets/LOgo WEb.avif" alt="Logo" class="logo">
-        <a class="#"> Massage me</a>
-        <a href="#">Achievement</a>
-        <a href="#">My Profile</a>
-        <a href="#">Home</a>
-    </div>
+        <!-- Topnav -->
+        <nav class="topnav">
+            <a href="#home">Home</a>
+            <a href="#profile">My Profile</a>
+            <a href="#achievement">Achievement</a>
+            <a href="#massage">Massage Me</a>
+        </nav>
     </header>
-    <!--Main-->
+
+    <!-- Main Content -->
     <main>
-        <!--Home-->
+        <h1>Hi, <span id="sepa">Sheva</span>! Welcome to My Web!</h1>
+        <button id="gantinama">Ganti Nama Anda</button>
+
+        <!-- Home Section -->
         <section id="home">
             <header>
-                <h1>ProjectRevoU</h1>
-                <p>Learn. Grow. Success</p>
+                <div class="banner">
+                    <div class="wrapper">
+                        <img src="assets/img1.jpg" alt="ProjectRevoU">
+                        <img src="assets/img2.jpg" alt="ProjectRevoU">
+                        <img src="assets/img3.jpg" alt="ProjectRevoU">
+                    </div>
+                </div>
+                <div class="tentang">
+                <h1>Tentang Saya</h1>
+                <p>Halo, namaku Made Sheva Adi Pramana. Kalian bisa memanggilku Sheva aja. Aku adalah mahasiswa Universitas Udayana yang baru terjun ke dunia IT.
+                     Disini aku mencoba belajar membuat website portofolio sederhana bersama RevoU. Ini merupakan pengalaman yng luar biasa karena aku bisa belajar
+                      dengan mudah berkat penjelasan yang jelas dan juga  rinci dari para pengajar</p>
+                </div>
+                <div class="kenapa">
+                <h1>Kenapa Gambarnya Tentang Alam?</h1>
+                <p>Karena saya sangat suka dengan alam di lingkungan saya. Saya suka ketika berada di luar rumah, menghirup udara segar dari alam yang sangat indah</p>
+                </div>
             </header>
         </section>
-            <!--Banner Autoslide-->
-            <div class="banner-img">
-                jsghb ljrhgojnojdsogjer hgoaenv riehg ajkv;akjrjg ;rj
-            </div>
-      
+
         
 
         <hr/>
 
-        <!--My Profile-->
+        <!-- Profile Section -->
         <section id="profile">
             <header>
                 <h1>Profile</h1>
-                <p>Learn. Grow. Success</p>
+                
             </header>
-        </section>
-            <!--My Profile Content-->
-            <div class="profile-content">
-                jsghb ljrhgojnojdsogjer hgoaenv riehg ajkv;akjrjg ;rj
+            <div class="content-box">
+                <div class="profile-container">
+                    <img src="assets/img4.jpg" alt="Profile Picture" class="profile-picture">
+                    <p class="profile-description">
+                        Halo! Saya Sheva, seorang mahasiswa yang sedang belajar dan mendalami dunia IT. Saya berumur  19 tahun dan berasal dari Bali.  Saya memiliki ketertarikan dalam pengembangan web 
+                        dan selalu berusaha meningkatkan keterampilan saya dalam coding. Memang saya masih tidak ada pengalaman dalam bidang IT. Maka dari itu,
+                        saya berusaha untuk menguatkan  skill saya dengan ikut pembelajaran dari RevoU  ini. 
+                    </p>
+                </div>
             </div>
-       
-        
+        </section>
 
         <hr/>
 
-         <!--Achievement-->
-         <section id="achievement">
+        <!-- Achievement Section -->
+        <section id="achievement">
             <header>
                 <h1>Achievement</h1>
-                <p>Learn. Grow. Success</p>
+                <p>Ini sedikit prestasi saya. Saya hanya mencantumkan dua saja</p>
             </header>
-        </section>
-            <!--Achievement Content-->
-            <div class="achievement-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam amet asperiores dolore est
-                 officia quibusdam quo facilis eos incidunt. Vero tenetur nostrum error molestias assumenda 
-                 deleniti enim blanditiis consectetur commodi! Lorem, ipsum dolor sit amet consectetur 
-                 adipisicing elit. Quod officiis dignissimos dolore enim accusamus ea molestiae pariatur! 
-                 Voluptas sint reiciendis consequatur. Excepturi nemo possimus sit debitis ea non unde facere.
+            <div class="content-box">
+                <div class="achievement-container">
+                    <div class="achievement-card">
+                        <img src="assets/img5.jpg" alt="Achievement 1" class="achievement-image">
+                        <p class="achievement-text">Juara 1 Lomba Baris Berbaris se-Polda Bali. meski tidak ada hubungannya dengan dunia IT, itu tetap perstasi saya</p>
+                    </div>
+                
+                    <div class="achievement-card">
+                        <img src="assets/img6.jpeg" alt="Achievement 2" class="achievement-image">
+                        <p class="achievement-text">Berhasil Membuat Website Portfolio Pertama. Walau belum sebagus yang lain, saya masih berusaha membuatnya</p>
+                    </div>
+                </div>
+                
             </div>
-        
-        
-           
+        </section>
+
         <hr/>
 
-        <!--Massage Me-->
-        <section id="massage-me">
+        <!-- Massage Me Section -->
+        <section id="message-me">
             <header>
-                <h1>Massage Me</h1>
-                <p1>jsshieithbrebvuethg</p1>
+                <h1>Message Me</h1>
+                <p>Silakan Masukkan pesan dan kesanmu terhadap hasil portofolioku yaa, jangan ragu untuk mengkritik dan memberi saran :)</p>
             </header>
-        </section>
-            <!--Massage Content-->
-            <div class="massage-content">
-                Nama saya Made Sheva Adi Pramana, saya adalah seorang mahasiswa yang sedang belajar di ProjectRevoU
+            
+            <div class="message-container">
+              <!-- Form Input -->
+              <form id="messageForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="number" id="age" placeholder="Your Age" required>
+                <select id="gender" required>
+                  <option value="">Select Gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+                <input type="datetime-local" id="time" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+              </form>
+              
+              <!-- Display Messages -->
+              <div class="message-display" id="messageDisplay">
+                <h3>Messages</h3>
+              </div>
             </div>
-        
+          </section>
     </main>
-    <!--Footer-->
+
+    <!-- Footer -->
     <footer>
-        <p>&copy;Sheva A.P 2025</p>
+        <p>&copy; Sheva A.P 2025</p>
     </footer>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>

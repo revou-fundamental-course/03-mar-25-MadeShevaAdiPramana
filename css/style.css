@@ -1,90 +1,930 @@
+/* Reset */
 body {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
     background-color: rgb(255, 255, 255);
-    
 }
 
+/* Header Wrapper */
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 20px;
+}
+
+/* Efek Hover */
+.topnav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #00ADB5;
+    border-color: #00ADB5;
+    box-shadow: 0px 4px 10px rgba(0, 173, 181, 0.5);
+}
+
+/* Efek Animasi Garis di Bawah saat Hover */
+.topnav a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0%;
+    height: 3px;
+    background: #00ADB5;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.topnav a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Logo */
+.logo {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+
+/* Navigation Bar */
 .topnav {
-    background-color: #000000;
-    overflow: hidden;
+    display: flex;
+    gap: 10px;
 }
 
 .topnav a {
-    float: right;
-    color: #ffffff;
+    width: 150px;
     text-align: center;
-    padding: 22px 16px;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
     text-decoration: none;
     font-size: 17px;
+    transition: 0.3s;
+}
+
+.tentang {
+    width: 500px;
+    height: fit-content;
+    text-align: center;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+    align-items: center;
+    margin: auto;
+}
+
+.kenapa {
+    width: 500px;
+    height: fit-content;
+    text-align: center;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+    align-items: center;
+    margin: auto;
 }
 
 .topnav a:hover {
-    background-color: #ffffff;
+    background-color: white;
     color: black;
 }
 
-.topnav a.active {
-    background-color: #000000;
-    color: rgb(0, 0, 0);
+
+.banner {
+    height: 600px;
+    width: 95%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.topnav .logo {
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    margin-right: 16px;
-    padding: 10px;
-}
 
-.banner-img {
-    border: solid;
-    height: 500px;
-    margin: 20px;
-    text-align: center;
-    align-content: center;
-}
 
-.profile-content {
-    border: solid;
-    height: 500px;
-    margin: 20px;
-    text-align: center;
-    align-content: center;
-}
-.achievement-content {
-    border: solid;
-    height: 500px;
-    margin: 20px;
-    text-align: center;
-    align-content: center;
-}
-.massage-content {
-    border: solid;
-    height: 500px;
-    margin: 20px;
-    text-align: center;
-    align-content: center;
-}
+
+/* Footer */
 footer {
     text-align: center;
-    align-content: center;
-    background-color: #000000;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(50, 50, 50, 0.9));
     color: #ffffff;
+    font-size: 1.2em;
+    font-weight: 500;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
 }
 
-#home {
-    margin: 10px;
+/* Hover effect */
+footer:hover {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 1), rgba(50, 50, 50, 1));
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
 }
 
-#profile {
-    margin: 10px;
+
+/* Responsiveness */
+@media only screen and (max-width: 840px) {
+    .header-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topnav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topnav a {
+        width: 100%;
+    }
+
+    .content-box {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
 }
 
+.logo {
+    margin-bottom: 14px;
+}
+
+
+    .banner {
+        width: 85vmin;
+        height: 300px; /* Sesuaikan tinggi */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        background-color: white;
+        margin: auto;
+        border-radius: 20px;
+    }
+
+.wrapper {
+    display: flex;
+    width: 300%; 
+    transition: transform 0.5s ease-in-out;
+}
+
+.wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Background dengan warna soft tetapi tetap elegan */
+body {
+    background: linear-gradient(to right, #949699, #4e4e4e);
+    color: #fffbfb;
+}
+
+
+/* Perbaiki tampilan header */
+.header-wrapper {
+    background: linear-gradient(90deg, #222831, #000000);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigasi tetap terlihat modern */
+.topnav a {
+    transition: all 0.4s ease-in-out;
+}
+
+.topnav a:hover {
+    background: linear-gradient(to right, #ffffff, #dddddd);
+    color: black;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Styling Section .tentang & .kenapa */
+.tentang, .kenapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%; /* Lebarkan agar lebih proporsional */
+    max-width: 650px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    color: #EEEEEE;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px auto; /* Pusatkan di tengah */
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efek Glow pada Border */
+.tentang::before, .kenapa::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0, 255, 255, 0.3), rgba(255, 0, 255, 0.3));
+    opacity: 0.5;
+    z-index: -1;
+    border-radius: 20px;
+    filter: blur(15px);
+    transition: opacity 0.4s ease-in-out;
+}
+
+.tentang:hover::before, .kenapa:hover::before {
+    opacity: 0.8;
+}
+
+/* Efek Hover */
+.tentang:hover, .kenapa:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Tambahkan Ikon */
+.tentang::after, .kenapa::after {
+    content: "🌿";
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    opacity: 0.6;
+}
+
+/* Tambahkan Animasi Fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tentang, .kenapa {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Responsive untuk Mobile */
+@media only screen and (max-width: 768px) {
+    .tentang, .kenapa {
+        width: 85%;
+        padding: 20px;
+    }
+}
+
+
+/* Perbaiki footer agar lebih modern */
+footer {
+    background: linear-gradient(90deg, #222831, #000000);
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling untuk teks sapaan */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    background: linear-gradient(135deg, #222831, #393E46);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Styling untuk teks dalam h1 */
+h1 span {
+    color: #FFD369; /* Warna emas */
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(255, 211, 105, 0.5);
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+/* Efek hover untuk nama */
+h1:hover span {
+    color: #FFDD88;
+    text-shadow: 3px 3px 15px rgba(255, 221, 136, 0.8);
+}
+
+/* Efek hover untuk h1 */
+h1 {
+    display: inline-block;
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+h1:hover {
+    transform: scale(1.07);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling untuk tombol */
+button#gantinama {
+    display: block;
+    margin: 25px auto;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #1F1F1F, #0B0B0B);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efek glow saat hover */
+button#gantinama:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #2B2B2B, #ffffff);
+    box-shadow: 0px 6px 20px rgba(255, 255, 255, 0.3);
+    color: #222831;
+}
+
+/* Efek animasi saat ditekan */
+button#gantinama:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Efek glow yang bergerak */
+button#gantinama::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 60%);
+    transition: all 0.6s ease-in-out;
+    transform: translate(-50%, -75%);
+    opacity: 0;
+}
+
+button#gantinama:hover::before {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+/* Animasi fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1, button#gantinama {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+        padding: 8px 16px;
+    }
+
+    button#gantinama {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    button#gantinama {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+form {
+    width: 45%;
+}
+
+.message-box {
+    width: 45%;
+    padding: 15px;
+    border: 2px solid #000;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+input, select, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid black;
+  }
+  
+  /* Styling untuk form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: 12px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling untuk input, select, textarea, dan button */
+input, select, textarea, button {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #d1d1d1;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+/* Efek hover untuk input, select, textarea */
+input:focus, select:focus, textarea:focus {
+    border-color: #3660de;
+    box-shadow: 0 0 8px rgba(54, 96, 222, 0.5);
+    outline: none;
+}
+
+/* Styling khusus untuk textarea */
+textarea {
+    height: auto;
+    min-height: 60px;
+    max-width: 100%;
+    resize: vertical;
+}
+
+/* Styling untuk tombol */
+button {
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Efek hover pada tombol */
+button:hover {
+    background-color: #2c4db0;
+}
+
+/* Styling untuk kotak pesan yang menampilkan hasil input */
+.message-display {
+    width: 45%;
+    padding: 15px;
+    min-height: 150px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+}
+
+/* Styling untuk pesan yang ditampilkan */
+.message-display div {
+    padding: 10px;
+    margin-bottom: 8px;
+    background: #000000;
+    border-left: 4px solid #878787;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+/* Efek Hover untuk Form dan Input */
+input:hover, select:hover, textarea:hover {
+    border-color: #4a90e2;
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.5);
+}
+
+/* Efek Hover untuk Tombol */
+button:hover {
+    background-color: #2c4db0;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 12px rgba(44, 77, 176, 0.3);
+}
+
+/* Efek Hover untuk Kotak Pesan */
+.message-display div:hover {
+    background: #1e1e1e;
+    border-left-color: #ffd369;
+    transform: translateX(5px);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    .message-container {
+        flex-direction: column;
+    }
+
+    form, .message-display {
+        width: 100%;
+    }
+}
+
+/* Profile Section */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    background: linear-gradient(135deg, #222831, #393E46);
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 700px;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efek Glow di Border */
+.profile-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(135deg, rgba(0, 173, 181, 0.8), rgba(238, 238, 238, 0.8));
+    mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+    -webkit-mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.profile-container:hover::before {
+    opacity: 0.8;
+}
+
+.profile-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Efek Partikel */
+.profile-container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* Profile Picture */
+.profile-picture {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    position: relative;
+}
+
+/* Efek Icon Kamera pada Foto */
+.profile-picture::after {
+    content: "📷";
+    font-size: 25px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.profile-picture:hover {
+    transform: scale(1.12) rotate(5deg);
+    box-shadow: 0px 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+.profile-picture:hover::after {
+    opacity: 1;
+}
+
+/* Profile Description */
+.profile-description {
+    max-width: 550px;
+    font-size: 17px;
+    color: #EEEEEE;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Ikon Dekoratif di Profile Description */
+.profile-description::before {
+    content: "✨";
+    font-size: 25px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.profile-description:hover {
+    transform: translateY(-5px);
+}
+
+.profile-description:hover::before {
+    opacity: 1;
+}
+
+/* Animasi Muncul */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-container {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .profile-container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .profile-picture {
+        width: 140px;
+        height: 140px;
+    }
+
+    .profile-description {
+        font-size: 15px;
+    }
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 600px) {
+    .profile-container {
+        padding: 10px;
+    }
+
+    .profile-description {
+        font-size: 14px;
+    }
+}
+
+/* Achievement Section */
+.achievement-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 20px;
+    position: relative;
+}
+
+/* Efek Partikel di Latar */
+.achievement-container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* Card Style with Glassmorphism */
+.achievement-card {
+    width: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Border Neon Glow */
+.achievement-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(135deg, rgba(0, 173, 181, 0.8), rgba(238, 238, 238, 0.8));
+    mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+    -webkit-mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.achievement-card:hover::before {
+    opacity: 1;
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Image Styling */
+.achievement-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 4px solid #00ADB5;
+}
+
+/* Text Styling */
+.achievement-text {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #EEEEEE;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 0 0 20px 20px;
+}
+
+/* Icon Dekoratif di Pojok */
+.achievement-card::after {
+    content: "🏆";
+    font-size: 50px;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.achievement-card:hover::after {
+    opacity: 1;
+}
+
+/* Achievement Section Background */
 #achievement {
-    margin: 10px;
+    width: 70%;
+    max-width: 800px;
+    padding: 30px;
+    background: linear-gradient(135deg, #222831, #393E46);
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    text-align: center;
+    margin: 30px auto;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
 }
 
-#massage-me {
-    margin: 10px;
+/* Efek Glow di #achievement */
+#achievement::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 25px;
+    padding: 3px;
+    background: linear-gradient(135deg, rgba(0, 173, 181, 0.8), rgba(238, 238, 238, 0.8));
+    mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+    -webkit-mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    opacity: 0.4;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#achievement:hover::before {
+    opacity: 0.8;
+}
+
+#achievement:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Animasi Fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.achievement-container, .achievement-card {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .achievement-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievement-card {
+        width: 90%;
+    }
 }
